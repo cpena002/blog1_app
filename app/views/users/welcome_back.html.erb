@@ -1,0 +1,7 @@
+<h1>Welcome back <%= @user.full_name %> </h1>
+
+<form  action="users/welcome_back" method="post">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="message" placeholder="Message">
+  <input type="submit" value="login">
+</form>

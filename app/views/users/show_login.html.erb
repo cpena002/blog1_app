@@ -1,0 +1,14 @@
+<p>
+  <strong>Please log in</strong>
+</p>
+<hr>
+
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+
+<form action="/users/perform_login" method="post">
+  <input type="text" name="login_email" placeholder="Email"/>
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" value="Log In">
+</form>
